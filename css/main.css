@@ -1,0 +1,47 @@
+.route .punten li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  list-type: none;
+  background-color: #efefef;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.route .punten li:before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 5px;
+  top: 50%;
+  left: -5px;
+  margin-top: -2px;
+  position: absolute;
+  background-color: #333;
+}
+.route .punten li.group {
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+.route .punten li.group:before {
+  display: none;
+}
+.route .punten li.links {
+  background-color: blue;
+}
+.route .punten li.rechts {
+  background-color: red;
+}
+.route .punten li.rechtdoor {
+  background-color: green;
+}
+.route .punten li.onbekend {
+  opacity: 0.3;
+}
+.route .punten li.onbekend:hover {
+  opacity: 1;
+}
